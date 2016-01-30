@@ -14,20 +14,20 @@ class CreatePostcards < ActiveRecord::Migration
       t.string :officer_address_line_2
       t.string :officer_address_city
       t.string :officer_address_province
-      t.references :officer_address_state, index: true
+      t.integer :officer_address_state_id, index: true
       t.string :officer_address_postal_code
       t.string :officer_address_country
       t.string :organization_address_line_1
       t.string :organization_address_line_2
       t.string :organization_address_city
       t.string :organization_address_province
-      t.references :organization_address_state, index: true
+      t.integer :organization_address_state_id, index: true
       t.string :organization_address_postal_code
       t.string :organization_address_country
       t.string :doing_business_as_name_1
       t.string :doing_business_as_name_2
       t.string :doing_business_as_name_3
-      t.references :organization, index: true
+      t.integer :organization_id, index: true
 
       t.timestamps null: false
     end

@@ -4,7 +4,7 @@ class CreateOrganizations < ActiveRecord::Migration
       t.string :ein
       t.string :legal_name
       t.string :city
-      t.references :states, index: true
+      t.integer :state_id, index: true
       t.string :country
       t.string :status
 

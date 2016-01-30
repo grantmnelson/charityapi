@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160130144122) do
+ActiveRecord::Schema.define(version: 20160130182820) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -20,14 +20,14 @@ ActiveRecord::Schema.define(version: 20160130144122) do
     t.string   "ein"
     t.string   "legal_name"
     t.string   "city"
-    t.integer  "states_id"
+    t.integer  "state_id"
     t.string   "country"
     t.string   "status"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  add_index "organizations", ["states_id"], name: "index_organizations_on_states_id", using: :btree
+  add_index "organizations", ["state_id"], name: "index_organizations_on_state_id", using: :btree
 
   create_table "postcards", force: :cascade do |t|
     t.string   "ein"
@@ -65,7 +65,7 @@ ActiveRecord::Schema.define(version: 20160130144122) do
   add_index "postcards", ["organization_address_state_id"], name: "index_postcards_on_organization_address_state_id", using: :btree
   add_index "postcards", ["organization_id"], name: "index_postcards_on_organization_id", using: :btree
 
-  create_table "revoked_organizations", force: :cascade do |t|
+  create_table "revokedorganizations", force: :cascade do |t|
     t.string   "ein"
     t.string   "legal_name"
     t.string   "doing_business_as_name"
@@ -81,8 +81,8 @@ ActiveRecord::Schema.define(version: 20160130144122) do
     t.datetime "updated_at",                   null: false
   end
 
-  add_index "revoked_organizations", ["organization_id"], name: "index_revoked_organizations_on_organization_id", using: :btree
-  add_index "revoked_organizations", ["state_id"], name: "index_revoked_organizations_on_state_id", using: :btree
+  add_index "revokedorganizations", ["organization_id"], name: "index_revokedorganizations_on_organization_id", using: :btree
+  add_index "revokedorganizations", ["state_id"], name: "index_revokedorganizations_on_state_id", using: :btree
 
   create_table "states", force: :cascade do |t|
     t.string   "name"

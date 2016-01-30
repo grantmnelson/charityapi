@@ -1,7 +1,6 @@
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
-
+# # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+#
 one:
-<<<<<<< HEAD
   ein: "000003154"
   legal_name: Oakleaf Forest Tenant Management
   city: Norfolk
@@ -9,24 +8,10 @@ one:
   country: United States
   status: PC
 
-two:
-  ein: "000587764"
-  legal_name: Iglesia Bethesda Inc.
-  city: Lowell
-  state: Massachusetts
-  country: United States
-  status: PC
-=======
-  ein: MyString
-  legal_name: MyString
-  city: MyString
-  country: MyString
-  status: MyString
-
-two:
-  ein: MyString
-  legal_name: MyString
-  city: MyString
-  country: MyString
-  status: MyString
->>>>>>> 660986b4662deb491bd4cbb9c0593e5665240fe2
+# two:
+#   ein: "000587764"
+#   legal_name: Iglesia Bethesda Inc.
+#   city: Lowell
+#   state: Massachusetts
+#   country: United States
+#   status: PC
