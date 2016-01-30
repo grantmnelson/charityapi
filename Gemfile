@@ -31,14 +31,24 @@ gem 'carrierwave' #carrierwave makes uploading files and images much easier
 # gem ?? https://github.com/bendiken/rack-throttle
 
 group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug'
+  gem "awesome_print"
+  gem 'faker' #faker for making data
+  gem 'simplecov', :require => false
 end
 
 group :development do
-  # Access an IRB console on exception pages or by using <%= console %> in views
-  gem 'web-console', '~> 2.0'
+  gem 'binding_of_caller' #suggested by debugging
+  gem 'better_errors' #better error debugger
+  gem 'spring' #keeps app running in background, speeds up dev
+  gem "letter_opener" #makes emails pop up in the browser rather than actually sending them in development mode.
+  gem 'quiet_assets' # prevents logging everytime an asset's requested; cleans up server console.
+end
 
-  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-  gem 'spring'
+group :production do
+  gem 'unicorn', '4.8.3' #Unicorn for Heroku in production. for large amounts of traffic.
+  gem 'rails_12factor' #Heroku highly recommends using this
+  gem 'heroku_rails_deflate' #gzipper for Heroku, reduces pageload time and makes Google happy
+  gem "rack-timeout" # kills long-running requests and logs exceptions related to timeouts. Suggested by Heroku.
+  # The following are for when scaling needs to happen.
+  # gem 'unicorn-worker-killer' # This allows you to kill unicorn worker_processes when they start to consume too much memory. See https://www.digitalocean.com/community/tutorials/how-to-optimize-unicorn-workers-in-a-ruby-on-rails-app for configuration instructions
 end
