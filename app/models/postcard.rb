@@ -1,4 +1,5 @@
 class Postcard < ActiveRecord::Base
-  has_many :states
+  belongs_to :officer_address_state, :class_name => 'State'
+  belongs_to :organization_address_state, :class_name => 'State'
   belongs_to :organization
 end
