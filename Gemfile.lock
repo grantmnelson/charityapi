@@ -50,8 +50,14 @@ GEM
       rack (>= 0.9.0)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
+<<<<<<< HEAD
     bootstrap-sass (3.2.0.2)
       sass (~> 3.2)
+=======
+    bootstrap-sass (3.3.6)
+      autoprefixer-rails (>= 5.2.1)
+      sass (>= 3.3.4)
+>>>>>>> 660986b4662deb491bd4cbb9c0593e5665240fe2
     builder (3.2.2)
     carrierwave (0.10.0)
       activemodel (>= 3.2.0)
@@ -67,6 +73,7 @@ GEM
       execjs
     coffee-script-source (1.10.0)
     concurrent-ruby (1.0.0)
+    connection_pool (2.2.0)
     debug_inspector (0.0.2)
     devise (3.5.5)
       bcrypt (~> 3.0)
@@ -280,6 +287,7 @@ GEM
       nokogiri (>= 1.4.1)
       trollop
     rdoc (4.2.1)
+    redis (3.2.2)
     responders (2.1.1)
       railties (>= 4.2.0, < 5.1)
     rest-client (1.8.0)
@@ -296,6 +304,10 @@ GEM
     sdoc (0.4.1)
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
+    sidekiq (4.1.0)
+      concurrent-ruby (~> 1.0)
+      connection_pool (~> 2.2, >= 2.2.0)
+      redis (~> 3.2, >= 3.2.1)
     simplecov (0.11.1)
       docile (~> 1.1.0)
       json (~> 1.8)
@@ -342,7 +354,11 @@ DEPENDENCIES
   awesome_print
   better_errors
   binding_of_caller
+<<<<<<< HEAD
   bootstrap-sass (~> 3.2.0)
+=======
+  bootstrap-sass (~> 3.3.6)
+>>>>>>> 660986b4662deb491bd4cbb9c0593e5665240fe2
   carrierwave
   coffee-rails (~> 4.1.0)
   devise
@@ -362,6 +378,7 @@ DEPENDENCIES
   rails_12factor
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
+  sidekiq
   simplecov
   spring
   stripe

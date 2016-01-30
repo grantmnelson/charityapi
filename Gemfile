@@ -6,6 +6,8 @@ gem 'rails', '4.2.5.1'
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 0.15'
 # Use SCSS for stylesheets
+gem 'bootstrap-sass', '~>3.3.6' #Twitter's Bootstrap
+
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
@@ -29,6 +31,7 @@ gem 'stripe'
 gem 'foreman' # For developing locally. `foreman s` to start it.
 gem "fog" # carrierwave + AWS S3 = heaven
 gem 'carrierwave' #carrierwave makes uploading files and images much easier
+gem 'sidekiq' #Background processing
 # gem ?? https://github.com/bendiken/rack-throttle
 
 #bootstrap gems

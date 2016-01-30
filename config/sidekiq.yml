@@ -1,0 +1,7 @@
+# Custom and Advanced Configuration for Sidekiq.
+# http://manuel.manuelles.nl/sidekiq-heroku-redis-calc/
+
+:concurrency: <%= Integer(ENV["SIDEKIQ_CONCURRENCY"] || 2) %> # Bumping Redis Connections to 50 allows bumping this.
+:queues:
+  - default
+  - mailer
