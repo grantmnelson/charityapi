@@ -31,6 +31,10 @@ gem "fog" # carrierwave + AWS S3 = heaven
 gem 'carrierwave' #carrierwave makes uploading files and images much easier
 # gem ?? https://github.com/bendiken/rack-throttle
 
+#bootstrap gems
+gem 'bootstrap-sass', '~> 3.2.0'
+gem 'autoprefixer-rails'
+
 group :development, :test do
   gem "awesome_print"
   gem 'faker' #faker for making data
