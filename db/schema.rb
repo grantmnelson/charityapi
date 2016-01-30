@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160130082453) do
+ActiveRecord::Schema.define(version: 20160130144122) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -28,6 +28,62 @@ ActiveRecord::Schema.define(version: 20160130082453) do
   end
 
   add_index "organizations", ["states_id"], name: "index_organizations_on_states_id", using: :btree
+
+  create_table "postcards", force: :cascade do |t|
+    t.string   "ein"
+    t.integer  "tax_year"
+    t.string   "organization_name"
+    t.string   "gross_reciepts_under_25k"
+    t.boolean  "terminated"
+    t.date     "tax_period_begin_date"
+    t.date     "tax_period_end_date"
+    t.string   "website_url"
+    t.string   "officer_name"
+    t.string   "officer_address_line_1"
+    t.string   "officer_address_line_2"
+    t.string   "officer_address_city"
+    t.string   "officer_address_province"
+    t.integer  "officer_address_state_id"
+    t.string   "officer_address_postal_code"
+    t.string   "officer_address_country"
+    t.string   "organization_address_line_1"
+    t.string   "organization_address_line_2"
+    t.string   "organization_address_city"
+    t.string   "organization_address_province"
+    t.integer  "organization_address_state_id"
+    t.string   "organization_address_postal_code"
+    t.string   "organization_address_country"
+    t.string   "doing_business_as_name_1"
+    t.string   "doing_business_as"
+    t.string   "name_2"
+    t.string   "doing_business_as_name_3"
+    t.integer  "organization_id"
+    t.datetime "created_at",                       null: false
+    t.datetime "updated_at",                       null: false
+  end
+
+  add_index "postcards", ["officer_address_state_id"], name: "index_postcards_on_officer_address_state_id", using: :btree
+  add_index "postcards", ["organization_address_state_id"], name: "index_postcards_on_organization_address_state_id", using: :btree
+  add_index "postcards", ["organization_id"], name: "index_postcards_on_organization_id", using: :btree
+
+  create_table "revoked_organizations", force: :cascade do |t|
+    t.string   "ein"
+    t.string   "legal_name"
+    t.string   "doing_business_as_name"
+    t.string   "organization_address"
+    t.string   "city"
+    t.integer  "state_id"
+    t.string   "exemption_type"
+    t.date     "revocation_date"
+    t.date     "revocation_posting_date"
+    t.date     "exemption_reinstatement_date"
+    t.integer  "organization_id"
+    t.datetime "created_at",                   null: false
+    t.datetime "updated_at",                   null: false
+  end
+
+  add_index "revoked_organizations", ["organization_id"], name: "index_revoked_organizations_on_organization_id", using: :btree
+  add_index "revoked_organizations", ["state_id"], name: "index_revoked_organizations_on_state_id", using: :btree
 
   create_table "states", force: :cascade do |t|
     t.string   "name"
