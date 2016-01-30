@@ -338,6 +338,7 @@ DEPENDENCIES
   binding_of_caller
   carrierwave
   coffee-rails (~> 4.1.0)
+  devise
   devise-async
   faker
   figaro
