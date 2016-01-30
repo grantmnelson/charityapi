@@ -13,6 +13,12 @@ class OrganizationTest < ActiveSupport::TestCase
 
   test "All Organizations have an EIN" do
     @org = organizations(:oakleaf)
+    @org.ein = ""
+    assert_not @org.valid?
+  end
+
+  test "EIN cannot be nil" do
+    @org = organizations(:oakleaf)
     @org.ein = nil
     assert_not @org.valid?
   end
@@ -24,8 +30,10 @@ class OrganizationTest < ActiveSupport::TestCase
   end
 
   test "EIN is exactly 9 digits" do
+
     @org = organizations(:oakleaf)
     @org.ein = "123" # too short
+
     assert_not @org.valid?
 
     @org = organizations(:oakleaf)
