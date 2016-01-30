@@ -1,0 +1,52 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Use @import, NOT 'require'
+ */
+
+
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+
+
+
+
+
+
+// Required Fields for Forms.
+.required_field:after {
+  content:"*";
+  color:red;
+}
+
+#error_explanation {
+  color: #FF9090;
+  ul {
+    color: #FF9090;
+    margin: 0 0 30px 0;
+    border-radius:5px;
+  }
+}
+
+.field_with_errors {
+  // @extend .has-error;
+  .form-control {
+    border-color: $state-danger-text;
+  }
+}
+
+
+
+
+
+
+/* miscellaneous */
+.debug_dump {
+  clear: both;
+  float: left;
+  width: 100%;
+  margin-top: 45px;
+  @include box_sizing;
+}
