@@ -5,10 +5,7 @@ ruby "2.3.0"
 gem 'rails', '4.2.5.1'
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 0.15'
-# Use SCSS for stylesheets
-gem 'bootstrap-sass', '~>3.3.6' #Twitter's Bootstrap
 
-gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
@@ -35,7 +32,9 @@ gem 'sidekiq' #Background processing
 # gem ?? https://github.com/bendiken/rack-throttle
 
 #bootstrap gems
-gem 'bootstrap-sass', '~> 3.2.0'
+# Use SCSS for stylesheets
+gem 'bootstrap-sass', '~>3.3.6' #Twitter's Bootstrap
+gem 'sass-rails', '~> 5.0'
 gem 'autoprefixer-rails'
 
 group :development, :test do
