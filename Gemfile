@@ -31,6 +31,7 @@ gem 'stripe'
 gem 'foreman' # For developing locally. `foreman s` to start it.
 gem "fog" # carrierwave + AWS S3 = heaven
 gem 'carrierwave' #carrierwave makes uploading files and images much easier
+gem 'sidekiq' #Background processing
 # gem ?? https://github.com/bendiken/rack-throttle
 
 group :development, :test do
