@@ -1,34 +1,33 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  ein: MyString
-  tax_year: 1
-  organization_name: MyString
-  gross_reciepts_under_25k: MyString
+  ein: 000100514
+  tax_year: 2009
+  organization_name: DAWSON COUNTY ROD & GUN CLUB
+  gross_reciepts_under_25k: true
   terminated: false
-  tax_period_begin_date: 2016-01-30
-  tax_period_end_date: 2016-01-30
+  tax_period_begin_date: 2009-04-01
+  tax_period_end_date: 2010-03-31
   website_url: MyString
   officer_name: MyString
   officer_address_line_1: MyString
   officer_address_line_2: MyString
   officer_address_city: MyString
   officer_address_province: MyString
-  officer_address_state: 
+  officer_address_state:
   officer_address_postal_code: MyString
   officer_address_country: MyString
   organization_address_line_1: MyString
   organization_address_line_2: MyString
   organization_address_city: MyString
   organization_address_province: MyString
-  organization_address_state: 
+  organization_address_state: one
   organization_address_postal_code: MyString
   organization_address_country: MyString
   doing_business_as_name_1: MyString
-  doing_business_as: MyString
-  name_2: MyString
+  doing_business_as_name_2: MyString
   doing_business_as_name_3: MyString
-  organization: 
+  organization: one
 
 two:
   ein: MyString
@@ -44,18 +43,18 @@ two:
   officer_address_line_2: MyString
   officer_address_city: MyString
   officer_address_province: MyString
-  officer_address_state: 
+  officer_address_state:
   officer_address_postal_code: MyString
   officer_address_country: MyString
   organization_address_line_1: MyString
   organization_address_line_2: MyString
   organization_address_city: MyString
   organization_address_province: MyString
-  organization_address_state: 
+  organization_address_state:
   organization_address_postal_code: MyString
   organization_address_country: MyString
   doing_business_as_name_1: MyString
   doing_business_as: MyString
   name_2: MyString
   doing_business_as_name_3: MyString
-  organization: 
+  organization:

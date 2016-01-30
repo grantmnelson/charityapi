@@ -1,17 +1,17 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  ein: MyString
-  legal_name: MyString
-  city: MyString
-  state_id: 
-  country: MyString
-  status: MyString
+  ein: "000003154"
+  legal_name: Oakleaf Forest Tenant Management
+  city: Norfolk
+  state: Virginia
+  country: United States
+  status: PC
 
 two:
-  ein: MyString
-  legal_name: MyString
-  city: MyString
-  state_id: 
-  country: MyString
-  status: MyString
+  ein: "000587764"
+  legal_name: Iglesia Bethesda Inc.
+  city: Lowell
+  state: Massachusetts
+  country: United States
+  status: PC

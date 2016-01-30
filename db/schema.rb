@@ -33,7 +33,7 @@ ActiveRecord::Schema.define(version: 20160130144122) do
     t.string   "ein"
     t.integer  "tax_year"
     t.string   "organization_name"
-    t.string   "gross_reciepts_under_25k"
+    t.boolean  "gross_reciepts_under_25k"
     t.boolean  "terminated"
     t.date     "tax_period_begin_date"
     t.date     "tax_period_end_date"
@@ -54,8 +54,7 @@ ActiveRecord::Schema.define(version: 20160130144122) do
     t.string   "organization_address_postal_code"
     t.string   "organization_address_country"
     t.string   "doing_business_as_name_1"
-    t.string   "doing_business_as"
-    t.string   "name_2"
+    t.string   "doing_business_as_name_2"
     t.string   "doing_business_as_name_3"
     t.integer  "organization_id"
     t.datetime "created_at",                       null: false
