@@ -1,6 +1,6 @@
 # # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 #
-one:
+oakleaf:
   ein: "000003154"
   legal_name: Oakleaf Forest Tenant Management
   city: Norfolk

@@ -1,8 +1,23 @@
 class Organization < ActiveRecord::Base
   belongs_to :state
 
+  # Before validation
+  before_validate :format_ein_number
+
+  # Validation
+  validates :ein, presence: true
+  validate :validate_ein_length
+  validate :validate_ein_prefix
+
+
+
+
+
+
+
+
   def format_ein_number # is this method neccessary for us?
-    self.ein = self.ein.gsub(/\D/, '') unless self.tax_id_number.nil? # what does this line do?
+    self.ein = self.ein.gsub(/\D/, '') unless self.tax_id_number.nil? # Removes all non-digits from the EIN number.
   end
 
  # Validates that the tax_id_number entered by the user has a known valid prefix.
@@ -19,7 +34,7 @@ class Organization < ActiveRecord::Base
    acceptable_prefixes.map! { |p| p.to_s }
 
    if !acceptable_prefixes.include?(self.ein[0,2])
-     errors.add(:ein, "Check the EIN First Two Digits")
+     errors.add(:ein, "First Two Digits of EIN are invalid")
    end
 
  end

@@ -23,8 +23,9 @@ ActiveRecord::Schema.define(version: 20160130182820) do
     t.integer  "state_id"
     t.string   "country"
     t.string   "status"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string   "irs_code_subsection"
+    t.datetime "created_at",          null: false
+    t.datetime "updated_at",          null: false
   end
 
   add_index "organizations", ["state_id"], name: "index_organizations_on_state_id", using: :btree
