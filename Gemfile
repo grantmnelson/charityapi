@@ -23,6 +23,7 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'figaro' #figaro for environment variables
+gem 'devise'
 gem 'devise-async' #for sending devise emails via sidekiq/async.
 gem 'stripe'
 gem 'foreman' # For developing locally. `foreman s` to start it.
