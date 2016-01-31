@@ -81,8 +81,6 @@ class Postcard < ActiveRecord::Base
 
             postcard = Postcard.find_or_initialize_by(ein: row_hash[:ein])
             postcard.attributes = row_hash
-            puts postcard.inspect unless postcard.valid?
-            puts postcard.errors
             postcard.save!
 
           end
