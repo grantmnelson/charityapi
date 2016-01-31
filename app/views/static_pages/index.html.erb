@@ -1,8 +1,6 @@
 <div class="col-md-12 container-fluid">
-  <div class="row">
+  <div class="row text-center">
     <%= image_tag('logo.png') %>
-    <h1>It Works!</h1>
-    <p>Find me in app/views/static_pages/index.html.erb</p>
   </div>
   <div class="row">
     <h2>/api/v1/eins/123456789</h2>
@@ -14,6 +12,9 @@
     <% @eins.each do |ein| %>
         <%= link_to "#{ein}", "/api/v1/eins/#{ein}" %><br>
     <% end %>
+  </div>
+  <div class="row text-center">
+    Made by Grant Nelson, Laila Wahedi, and Yusuf Ameri
   </div>
 
 </div>
