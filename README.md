@@ -17,3 +17,7 @@ Yusuf, a ruby developer, setup the database architecture and wrote nearly all of
 Other organizations providing this service range from free and not a high priority for the organization (pro publica) or thousands of dollars per year for API access.
 
 This tool will continue to be maintained and improved by Grant and his team at the MEANS Database ([www.foodrecovery.org](www.foodrecovery.org)), a nonprofit that helps connect those with surplus food to those that need it.
+
+### [View the Docs](https://hoyahacks2016.slack.com/messages/charity-api/)
+Want to contribute to the doc? Click [here](https://github.com/Grantimus9/charityapidoc)
+
