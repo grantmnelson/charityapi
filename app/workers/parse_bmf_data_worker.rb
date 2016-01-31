@@ -1,4 +1,4 @@
-class ScrapeBmfDataWorker.rb
+class ParseBmfDataWorker
   include Sidekiq::Worker
 
   # The perform() method is called regularly to collect and combine the data that
