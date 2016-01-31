@@ -10,7 +10,7 @@ class Postcard < ActiveRecord::Base
   validates :ein, presence: true
   validates :tax_year, presence: true
   validates :organization_name, presence: true
-  validates :gross_reciepts_under_25k, :inclusion => {:in => [true, false]} # 'T' represents True and 'F' represents False.
+  validates :gross_receipts_under_25k, :inclusion => {:in => [true, false]} # 'T' represents True and 'F' represents False.
   validates :terminated, :inclusion => {:in => [true, false]}
   validates :tax_period_begin_date, presence: true # Required, Format: MM-DD-YYYY
   validates :tax_period_end_date, presence: true # Required, Format: MM-DD-YYYY

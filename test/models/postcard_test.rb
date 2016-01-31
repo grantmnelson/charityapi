@@ -23,9 +23,9 @@ class PostcardTest < ActiveSupport::TestCase
     assert @org.organization_name
   end
   # is this one below right?
-  test "gross_reciepts_under_25k is not nil (boolean)" do
-    if @org.gross_reciepts_under_25k
-      assert @org.gross_reciepts_under_25k
+  test "gross_receipts_under_25k is not nil (boolean)" do
+    if @org.gross_receipts_under_25k
+      assert @org.gross_receipts_under_25k
     end
   end
 
