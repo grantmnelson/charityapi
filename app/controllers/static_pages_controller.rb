@@ -23,10 +23,10 @@ class StaticPagesController < ApplicationController
 
   def lookup
     ein = params[:ein].to_s
-    @response = Organization.find_by_ein(ein)
+    @reply = Organization.find_by_ein(ein)
     respond_to do |format|
       format.js
-      format.json { render @response }
+      format.json { render @reply }
     end
   end
 end

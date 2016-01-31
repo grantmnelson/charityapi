@@ -1,1 +1,1 @@
-$("#results").html('<%= "RESPONSE::::: #{@response}" %> ')
+$("#results").html('<%= "RESPONSE::::: #{@reply.to_s}<br>" %> ')

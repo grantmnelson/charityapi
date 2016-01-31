@@ -7,15 +7,13 @@
   <div class="row">
     <h2>/api/v1/eins/123456789</h2>
   </div>
-  <div class="row text-center">
-    <% @eins.each do |ein| %>
-      <%= form_tag("lookup", method: "post", :remote => true, :html => {format: "json"} ) do %>
-        <%= hidden_field_tag(:ein, value: ein) %>
-        <%= submit_tag("Get Data for Tax ID: #{ein}", class:'btn btn-primary') %>
-      <% end %>
-    <% end %>
-  </div>
   <div class="row text-center" id="results">
 
   </div>
+  <div class="row text-center">
+    <% @eins.each do |ein| %>
+        <%= link_to "#{ein}", "/api/v1/eins/#{ein}" %><br>
+    <% end %>
+  </div>
+
 </div>
