@@ -8,9 +8,8 @@ class ParsePostcardDataWorkerTest < ActiveSupport::TestCase
   end
 
   test "Test that the data was parsed" do
+
     Sidekiq::Testing.inline!
-
-
     filepath = 'test/files/postcard_test.txt'
     ParsePostcardDataWorker.perform_async(filepath)
 
