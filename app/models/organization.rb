@@ -7,9 +7,23 @@ class Organization < ActiveRecord::Base
   # Validation
   validates :ein, presence: true
   validates :state, presence: true
+  validates :status, presence: true
   validate :format_ein_number, if: Proc.new { |a| a.ein }
   validate :validate_ein_length, if: Proc.new { |a| a.ein }
   validate :validate_ein_prefix, if: Proc.new { |a| a.ein }
+  validate :validates_deductibility_code, if: Proc.new {|a| a.status}
+  
+  def validates_deductibility_code
+    acceptable_codes = [
+      "PC", "POF", "PF", "GROUP", "LODGE", "UNKWN", "EO", "FORGN", "SO",
+      "SONFI", "SOUNK"
+    ]
+
+    if !acceptable_codes.include?(self.status)
+      errors.add(:status, "Not a valid deductibility status description")
+    end
+
+  end
 
   def format_ein_number # is this method neccessary for us?
     self.ein = self.ein.gsub(/\D/, '')
