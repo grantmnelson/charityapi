@@ -7,6 +7,8 @@ class CreateRevokedorganizatins < ActiveRecord::Migration
         t.string :doing_business_as_name
         t.string :organization_address
         t.string :city
+        t.string :zip
+        t.string :country
         t.integer :state_id, index: true
         t.string :exemption_type
         t.date :revocation_date

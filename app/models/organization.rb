@@ -61,7 +61,7 @@ class Organization < ActiveRecord::Base
    n = SmarterCSV.process(filepath, options) do |array|
      array.each do |row_hash|
        next if row_hash[:ein].nil? # Skip if the row or hash is empty.
-       row_hash[:state_id] = State.find_by_code(row_hash[:state_id]) if row_hash[:country] == "US"
+       row_hash[:state_id] = State.find_by_code(row_hash[:state_id]).id if row_hash[:country] == "US"
        o = Organization.find_or_initialize_by(ein: row_hash[:ein])
        o.attributes = row_hash
        o.save!
@@ -121,6 +121,45 @@ class Organization < ActiveRecord::Base
 
      end
    end
+ end
+
+ def self.parse_revoked_data(filepath)
+   options = { :col_sep => "|",
+               :chunk_size => 100,
+               :convert_values_to_numeric => false,
+               :remove_empty_values => false,
+               :remove_zero_values => false,
+               :verbose => true,
+               :headers_in_file => false,
+               :user_provided_headers => [
+                                         "ein",
+                                         "legal_name",
+                                         "doing_business_as_name",
+                                         "organization_address",
+                                         "city",
+                                         "state_id",
+                                         "zip",
+                                         "country",
+                                         "exemption_type",
+                                         "revocation_date",
+                                         "revocation_posting_date"
+                                       ]
+                }
+
+        n = SmarterCSV.process(filepath, options) do |array|
+          array.each do |row_hash|
+            next if row_hash[:ein].nil? # Skip if the row or hash is empty.
+            row_hash[:state_id] = State.find_by_code(row_hash[:state_id]).id if row_hash[:country] == "US"
+            row_hash[:revocation_date] = Date.parse(row_hash[:revocation_date])
+            row_hash[:revocation_posting_date] = Date.parse(row_hash[:revocation_posting_date])
+            r = Revokedorganization.find_or_initialize_by(ein: row_hash[:ein])
+            r.attributes = row_hash
+            r.save!
+
+          end
+        end
+
+
  end
 
  private
