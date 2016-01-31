@@ -55,6 +55,7 @@ class ParsePostcardDataWorker
             row_hash[:officer_address_state_id] = State.find_by_code(row_hash[:officer_address_state_id]) if row_hash[:officer_address_country] == "US"
             row_hash[:organization_address_state_id] = State.find_by_code(row_hash[:organization_address_state_id]) if row_hash[:organization_address_country] == "US"
 
+
             Postcard.create(row_hash)
 
           end

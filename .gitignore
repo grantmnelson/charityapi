@@ -38,6 +38,7 @@ config/secrets.yml
 # these should all be checked in to normalize the environment:
 # .ruby-version, .ruby-gemset
 Gemfile.lock
+
 # ignore redis db files
 *.rdb
 

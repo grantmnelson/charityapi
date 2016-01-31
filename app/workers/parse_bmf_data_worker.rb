@@ -5,8 +5,9 @@ class ParseBmfDataWorker
   # the IRS publishes in the Exempt Organizations Business Master File (EOBMF)
 
   # Do Not rename the method from perform. You can define more methods below.
+
   def perform(filepath)
-    
+
   end
 
 end
