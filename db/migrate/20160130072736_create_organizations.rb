@@ -53,7 +53,7 @@ class CreateOrganizations < ActiveRecord::Migration
         "activity_code",
         "activity_category",
         "ntee_category",
-        "ntee"
+        "ntee_sub_category"
       ]
 
       # Add each one to the table.

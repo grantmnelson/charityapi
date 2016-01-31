@@ -23,5 +23,8 @@ module Charityapi
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
 
+    # Additional files to load.
+    config.autoload_paths += %W["#{config.root}/app/validators/"]
+
   end
 end
