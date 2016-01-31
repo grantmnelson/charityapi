@@ -30,7 +30,7 @@ gem "fog" # carrierwave + AWS S3 = heaven
 gem 'carrierwave' #carrierwave makes uploading files and images much easier
 gem 'sidekiq' #Background processing
 # gem ?? https://github.com/bendiken/rack-throttle
-
+gem 'smarter_csv'
 #bootstrap gems
 # Use SCSS for stylesheets
 gem 'bootstrap-sass', '~>3.3.6' #Twitter's Bootstrap

@@ -5,7 +5,7 @@ class CreatePostcards < ActiveRecord::Migration
         t.string :ein
         t.integer :tax_year
         t.string :organization_name
-        t.boolean :gross_reciepts_under_25k
+        t.boolean :gross_receipts_under_25k
         t.boolean :terminated
         t.date :tax_period_begin_date
         t.date :tax_period_end_date
