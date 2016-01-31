@@ -1,0 +1,209 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+Alabama:
+  name: Alabama
+  code: AL
+
+Alaska:
+  name: Alaska
+  code: AK
+
+Arizona:
+  name: Arizona
+  code: AZ
+
+Arkansas:
+  name: Arkansas
+  code: AR
+
+California:
+  name: California
+  code: CA
+
+Colorado:
+  name: Colorado
+  code: CO
+
+Connecticut:
+  name: Connecticut
+  code: CT
+
+Delaware:
+  name: Delaware
+  code: DE
+
+District of Columbia:
+  name: District of Columbia
+  code: DC
+
+Florida:
+  name: Florida
+  code: FL
+
+Georgia:
+  name: Georgia
+  code: GA
+
+Hawaii:
+  name: Hawaii
+  code: HI
+
+Idaho:
+  name: Idaho
+  code: ID
+
+Illinois:
+  name: Illinois
+  code: IL
+
+Indiana:
+  name: Indiana
+  code: IN
+
+Iowa:
+  name: Iowa
+  code: IA
+
+Kansas:
+  name: Kansas
+  code: KS
+
+Kentucky:
+  name: Kentucky
+  code: KY
+
+Louisiana:
+   name: Louisiana
+   code: LA
+
+Maine:
+  name: Maine
+  code: ME
+
+Maryland:
+  name: Maryland
+  code: MD
+
+Massachusetts:
+  name: Massachusetts
+  code: MA
+
+Michigan:
+  name: Michigan
+  code: MI
+
+Minnesota:
+  name: Minnesota
+  code: MN
+
+Mississippi:
+  name: Mississippi
+  code: MS
+
+Missouri:
+  name: Missouri
+  code: MO
+
+Montana:
+  name: Montana
+  code: MT
+
+Nebraska:
+  name: Nebraska
+  code: NE
+
+Nevada:
+  name: Nevada
+  code: NV
+
+New Hampshire:
+  name: New Hampshire
+  code: NH
+
+New Jersey:
+  name: New Jersey
+  code: NJ
+
+New Mexico:
+  name: New Mexico
+  code: NM
+
+New York:
+  name: New York
+  code: NY
+
+North Carolina:
+  name: North Carolina
+  code: NC
+
+North Dakota:
+  name: North Dakota
+  code: ND
+
+Ohio:
+  name: Ohio
+  code: OH
+
+Oklahoma:
+  name: Oklahoma
+  code: OK
+
+Oregon:
+  name: Oregon
+  code: OR
+
+Pennsylvania:
+  name: Pennsylvania
+  code: PA
+
+Rhode Island:
+  name: Rhode Island
+  code: RI
+
+South Carolina:
+  name: South Carolina
+  code: SC
+
+South Dakota:
+  name: South Dakota
+  code: SD
+
+Tennessee:
+  name: Tennessee
+  code: TN
+
+Texas:
+  name: Texas
+  code: TX
+
+Utah:
+  name: Utah
+  code: UT
+
+Vermont:
+  name: Vermont
+  code: VT
+
+Virginia:
+  name: Virginia
+  code: VA
+
+Washington:
+  name: Washington
+  code: WA
+
+West Virginia:
+  name: West Virginia
+  code: WV
+
+Wisconsin:
+  name: Wisconsin
+  code: WI
+
+Wyoming:
+  name: Wyoming
+  code: WY
+
+Other:
+  name: Other
+  code: ZZ

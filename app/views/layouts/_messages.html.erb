@@ -1,0 +1,15 @@
+<div style="position:absolute; width:100%; z-index:5" id="flash_msg">
+  <% flash.each do |name, msg| %>
+    <% if msg.is_a?(String) %>
+      <div class="alert alert-<%= name.to_s == 'notice' ? 'success' : 'danger' %> text-center" >
+        <%= content_tag :div, msg, :id => "flash_#{name}" %>
+      </div>
+    <% end %>
+  <% end %>
+</div>
+
+<script type="text/javascript">
+  setTimeout(function(){
+    $('#flash_msg').slideUp(300);
+  }, 3000);
+</script>

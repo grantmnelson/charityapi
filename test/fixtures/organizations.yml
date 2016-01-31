@@ -1,0 +1,17 @@
+# # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+#
+oakleaf:
+  ein: "000003154"
+  legal_name: Oakleaf Forest Tenant Management
+  city: Norfolk
+  state: Virginia
+  country: United States
+  status: PC
+
+iglesia:
+  ein: "000587764"
+  legal_name: Iglesia Bethesda Inc.
+  city: Lowell
+  state: Massachusetts
+  country: United States
+  status: PC

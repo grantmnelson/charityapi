@@ -1,0 +1,51 @@
+
+
+000003154|Oakleaf Forest Tenant Management|Norfolk|VA|United States|PC
+000587764|Iglesia Bethesda Inc.|Lowell|MA|United States|PC
+000635913|Ministerio Apostolico Jesucristo Es El Senor Inc.|Lawrence|MA|United States|PC
+000765634|New Hope Congregational Church|Boston|MA|United States|PC
+000841363|Agape House of Prayer|Mattapan|MA|United States|PC
+000852649|Bethany Presbyterian Church|Brookline|MA|United States|PC
+000889899|Academic and Behavioral Clinic Inc.|Boston|MA|United States|PC
+001037180|Middlesex Barbarians R F C Inc.|Woburn|MA|United States|PC
+001085119|Molina Institute for Photon Physics Research Inc.|Cambridge|MA|United States|PC
+002030711|Church of Our Lord Jesus Christ of Macedonia|Newark|NJ|United States|PC
+002067446|Usta National Junior Tennis League Inc.|White Plains|NY|United States|POF
+002237333|Lincoln Loan Fund|Fayetteville|AR|United States|SOUNK
+002293921|Lockman Foundation|La Habra|CA|United States|PC
+002296179|Religious Science Church Center of San Diego|San Diego|CA|United States|PC
+002296211|Assistance League of Ventura County|Ventura|CA|United States|PC
+007764840|Tri-County Lighthouse Baptist Church & Ministries Inc.|Deerfield St.|NJ|United States|PC
+010002847|Hulls Cove Neighborhood Association|Hulls Cove|ME|United States|PC
+010011694|Massachusetts Moderators Association|Manchester|MA|United States|PC
+010015091|Hanover Soccer Club Inc.|Cedar Knolls|NJ|United States|PC
+010017496|Agamenticus Yacht Club of York|York Harbor|ME|United States|PC
+010019705|Ancient Free & Accepted Masons of Maine Grand Lodge|Holden|ME|United States|EO,GROUP,LODGE
+010024155|Bangor Band|Bangor|ME|United States|PC
+010024645|Bangor Symphony Orchestra|Bangor|ME|United States|PC
+010024907|Bar Harbor Village Improvement Association|Bar Harbor|ME|United States|POF
+010043788|Community Christmas Project Inc.|Pittsfield|ME|United States|PC
+010056642|Demerritt Cemetery Assoc|Peru|ME|United States|EO
+010060379|Healing and Deliverance Ministry Inc.|Frederick|MD|United States|PC
+010092600|Hope Cemetery Corporation|Kennebunk|ME|United States|EO
+010095329|Improved Order of Redmen of Maine|Standish|ME|United States|EO,GROUP,LODGE
+010102346|Knights of Pythias of Maine Grand Lodge|Otis|ME|United States|EO,GROUP,LODGE
+010104905|Laurel Hill Cemetery Association|Saco|ME|United States|EO
+010104976|Saint Andrew Church|Los Alamitos|CA|United States|PC
+010114721|Mechanic Falls Maple Grove Cemetery Inc.|Norway|ME|United States|EO
+010124810|Mt. Hope Cemetery Corp|Bangor|ME|United States|EO
+010124841|Mt. Pleasant Cemetery Corp|S Portland|ME|United States|EO
+010130065|North Auburn Cemetery Association Inc.|Auburn|ME|United States|EO
+010130427|Bridgton Hospital|Bridgton|ME|United States|PC
+010131335|Oak Grove Cemetery Asso|Gardiner|ME|United States|EO
+010131950|Plant Memorial Home|Bath|ME|United States|POF
+010132610|Orchard Grove Cemetery Association|Kittery|ME|United States|EO
+010132625|Order of the Eastern Star of Maine|Peru|ME|United States|EO,GROUP,LODGE
+010133442|Oxford County Agricultural Society|Norway|ME|United States|PC
+010140283|Pine Grove Cemetery Association|Bath|ME|United States|EO
+010140290|Pine Grove Cemetery Corp|Falmouth|ME|United States|EO
+010145133|Prouts Neck Association|Scarborough|ME|United States|PC
+010147000|Rangeley Library Association|Rangeley|ME|United States|PC
+010153128|Greater Rumford Community Center|Rumford|ME|United States|PC
+010153960|Lincolnhealth|Damariscotta|ME|United States|PC
+010174648|Order of the Eastern Star of New Hampshire Grand Chapter|Penacook|NH|United States|EO,GROUP,LODGE
