@@ -10,6 +10,10 @@ Grant runs a small nonprofit that has to verify that other nonprofits they work 
 
 So, this weekend we took the data that the IRS publishes (somewhat) regularly and put it in an API format available at charityapi.org.
 
+Laila analyzed, sorted, and developed the taxonomy structure of the IRS's data, finding several sources of data on the IRS website. She also wrote the clear and helpful documentation.
+
+Yusuf, a ruby developer, setup the database architecture and wrote nearly all of the unit tests and validations. 
+
 Other organizations providing this service range from free and not a high priority for the organization (pro publica) or thousands of dollars per year for API access.
 
 This tool will continue to be maintained and improved by Grant and his team at the MEANS Database ([www.foodrecovery.org](www.foodrecovery.org)), a nonprofit that helps connect those with surplus food to those that need it.
