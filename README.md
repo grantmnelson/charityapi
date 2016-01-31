@@ -18,6 +18,6 @@ Other organizations providing this service range from free and not a high priori
 
 This tool will continue to be maintained and improved by Grant and his team at the MEANS Database ([www.foodrecovery.org](www.foodrecovery.org)), a nonprofit that helps connect those with surplus food to those that need it.
 
-### [View the Docs](https://hoyahacks2016.slack.com/messages/charity-api/)
+### [View the Docs](http://grantimus9.github.io/charityapidoc/)
 Want to contribute to the doc? Click [here](https://github.com/Grantimus9/charityapidoc)
 
