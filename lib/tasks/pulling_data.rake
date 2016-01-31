@@ -17,7 +17,7 @@ task :get_data => :environment do
 
   else
     organizations_text = "test/files/exempt_organizations_test.txt"
-    postcard_text = "test/files/postcard_data.txt"
+    postcard_text = "test/files/postcard_test.txt"
     revocation_text = "test/files/revocation_test.txt"
 
     regional_urls = [
