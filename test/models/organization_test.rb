@@ -58,4 +58,10 @@ class OrganizationTest < ActiveSupport::TestCase
     assert @org.valid? unless @org.status
   end
 
+  test "organizations with multiple statuses are still allowed" do
+    @org = organizations(:oakleaf)
+    @org.status = "EO,FAKE,FAKE"
+    assert @org.valid?
+  end
+
 end
