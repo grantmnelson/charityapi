@@ -27,7 +27,6 @@ class OrganizationTest < ActiveSupport::TestCase
 
     @org = organizations(:oakleaf)
     @org.ein = "123" # too short
-
     assert_not @org.valid?
 
     @org = organizations(:oakleaf)
