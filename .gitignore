@@ -38,7 +38,8 @@ config/secrets.yml
 # these should all be checked in to normalize the environment:
 # .ruby-version, .ruby-gemset
 Gemfile.lock
-.rdb # ignore redis db files
+# ignore redis db files
+*.rdb
 
 # unless supporting rvm < 1.11.0 or doing something fancy, ignore this:
 .rvmrc
@@ -52,5 +53,5 @@ bower.json
 .powenv
 
 # Adding large full text files (.txt) into gitignore
-test/files/exempt_organizations_full.txt
-test/files/postcard_full.txt
+/test/files/exempt_organizations_full.txt
+/test/files/postcard_full.txt
