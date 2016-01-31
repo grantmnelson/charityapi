@@ -2,7 +2,7 @@
 
 [www.charityapi.org](www.charityapi.org)
 
-Heroku (while DNS propagates): [charityapi.herokuapp.com](charityapi.herokuapp.com)
+Heroku (while DNS propagates): [charityapi.herokuapp.com](https://charityapi.herokuapp.com)
 
 [![Build Status](https://semaphoreci.com/api/v1/projects/2df1d7f1-851a-474b-ac1b-dac48adf54b1/679889/badge.svg)](https://semaphoreci.com/grantmnelson/charityapi)
 
