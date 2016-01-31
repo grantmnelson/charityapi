@@ -44,10 +44,11 @@ end
 task :demo_data => :environment do
 
   if Rails.env == "production"
-    organizations_text = "/exempt_organizations_test.txt"
-    postcard_text = "/postcard_test.txt"
-    revocation_text = "/revocation_test.txt"
-    regional_url = "/bmf_test.csv"
+    puts system('pwd')
+    organizations_text = "exempt_organizations_test.txt"
+    postcard_text = "postcard_test.txt"
+    revocation_text = "revocation_test.txt"
+    regional_url = "bmf_test.csv"
   else
     organizations_text = "test/files/exempt_organizations_test.txt"
     postcard_text = "test/files/postcard_test.txt"
