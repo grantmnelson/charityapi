@@ -8,5 +8,6 @@ Rails.application.routes.draw do
 
   root to: "static_pages#index"
 
-
+  post "lookup" => "static_pages#lookup"
+  
 end

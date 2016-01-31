@@ -5,17 +5,17 @@
     <p>Find me in app/views/static_pages/index.html.erb</p>
   </div>
   <div class="row">
-    
+    <h2>/api/v1/eins/123456789</h2>
   </div>
-  <div class="row">
+  <div class="row text-center">
     <% @eins.each do |ein| %>
-      <%= form_tag("/api/v1/eins/#{ein}", method: "get") do %>
+      <%= form_tag("lookup", method: "post", :remote => true, :html => {format: "json"} ) do %>
         <%= hidden_field_tag(:ein, value: ein) %>
         <%= submit_tag("Get Data for Tax ID: #{ein}", class:'btn btn-primary') %>
       <% end %>
     <% end %>
   </div>
-  <div class="row" id="results">
+  <div class="row text-center" id="results">
 
   </div>
 </div>
