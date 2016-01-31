@@ -1,6 +1,6 @@
 # The API the IRS Should Have Built
 
-[www.charityapi.org](www.charityapi.org)
+[www.charityapi.org](http://www.charityapi.org)
 
 Heroku (while DNS propagates): [charityapi.herokuapp.com](https://charityapi.herokuapp.com)
 
@@ -18,6 +18,6 @@ Other organizations providing this service range from free and not a high priori
 
 This tool will continue to be maintained and improved by Grant and his team at the MEANS Database ([www.foodrecovery.org](https://www.meansdatabase.com/)), a nonprofit that helps connect those with surplus food to those that need it.
 
-### [View the Docs](http://grantimus9.github.io/charityapidoc/)
+### [View the Docs](http://docs.charityapi.org/)
 Want to contribute to the doc? Click [here](https://github.com/Grantimus9/charityapidoc)
 
