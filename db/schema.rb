@@ -51,17 +51,17 @@ ActiveRecord::Schema.define(version: 20160130182820) do
     t.string   "ntee"
     t.datetime "created_at",                                                     null: false
     t.datetime "updated_at",                                                     null: false
-    t.datetime "status_last_checked",            default: '2016-01-31 11:46:49'
-    t.datetime "asset_code_last_checked",        default: '2016-01-31 11:46:49'
-    t.datetime "income_code_last_checked",       default: '2016-01-31 11:46:49'
-    t.datetime "asset_amount_last_checked",      default: '2016-01-31 11:46:49'
-    t.datetime "income_amount_last_checked",     default: '2016-01-31 11:46:49'
-    t.datetime "revenue_990_last_checked",       default: '2016-01-31 11:46:49'
-    t.datetime "affiliation_code_last_checked",  default: '2016-01-31 11:46:49'
-    t.datetime "last_return_last_checked",       default: '2016-01-31 11:46:49'
-    t.datetime "organization_code_last_checked", default: '2016-01-31 11:46:49'
-    t.datetime "ntee_category_last_checked",     default: '2016-01-31 11:46:49'
-    t.datetime "ntee_sub_category_last_checked", default: '2016-01-31 11:46:49'
+    t.datetime "status_last_checked",            default: '2016-02-05 01:19:15'
+    t.datetime "asset_code_last_checked",        default: '2016-02-05 01:19:15'
+    t.datetime "income_code_last_checked",       default: '2016-02-05 01:19:15'
+    t.datetime "asset_amount_last_checked",      default: '2016-02-05 01:19:15'
+    t.datetime "income_amount_last_checked",     default: '2016-02-05 01:19:15'
+    t.datetime "revenue_990_last_checked",       default: '2016-02-05 01:19:15'
+    t.datetime "affiliation_code_last_checked",  default: '2016-02-05 01:19:15'
+    t.datetime "last_return_last_checked",       default: '2016-02-05 01:19:15'
+    t.datetime "organization_code_last_checked", default: '2016-02-05 01:19:15'
+    t.datetime "ntee_category_last_checked",     default: '2016-02-05 01:19:15'
+    t.datetime "ntee_sub_category_last_checked", default: '2016-02-05 01:19:15'
   end
 
   add_index "organizations", ["state_id"], name: "index_organizations_on_state_id", using: :btree
@@ -96,10 +96,10 @@ ActiveRecord::Schema.define(version: 20160130182820) do
     t.integer  "organization_id"
     t.datetime "created_at",                                                                    null: false
     t.datetime "updated_at",                                                                    null: false
-    t.datetime "terminated_last_checked",                       default: '2016-01-31 11:46:50'
-    t.datetime "organization_address_line_1_last_checked",      default: '2016-01-31 11:46:50'
-    t.datetime "organization_address_state_id_last_checked",    default: '2016-01-31 11:46:50'
-    t.datetime "organization_address_postal_code_last_checked", default: '2016-01-31 11:46:50'
+    t.datetime "terminated_last_checked",                       default: '2016-02-05 01:19:16'
+    t.datetime "organization_address_line_1_last_checked",      default: '2016-02-05 01:19:16'
+    t.datetime "organization_address_state_id_last_checked",    default: '2016-02-05 01:19:16'
+    t.datetime "organization_address_postal_code_last_checked", default: '2016-02-05 01:19:16'
   end
 
   add_index "postcards", ["officer_address_state_id"], name: "index_postcards_on_officer_address_state_id", using: :btree
@@ -122,12 +122,12 @@ ActiveRecord::Schema.define(version: 20160130182820) do
     t.integer  "organization_id"
     t.datetime "created_at",                                                                null: false
     t.datetime "updated_at",                                                                null: false
-    t.datetime "city_last_checked",                         default: '2016-01-31 11:46:50'
-    t.datetime "legal_name_last_checked",                   default: '2016-01-31 11:46:50'
-    t.datetime "exemption_type_last_checked",               default: '2016-01-31 11:46:50'
-    t.datetime "revocation_date_last_checked",              default: '2016-01-31 11:46:50'
-    t.datetime "revocation_posting_date_last_checked",      default: '2016-01-31 11:46:50'
-    t.datetime "exemption_reinstatement_date_last_checked", default: '2016-01-31 11:46:50'
+    t.datetime "city_last_checked",                         default: '2016-02-05 01:19:16'
+    t.datetime "legal_name_last_checked",                   default: '2016-02-05 01:19:16'
+    t.datetime "exemption_type_last_checked",               default: '2016-02-05 01:19:16'
+    t.datetime "revocation_date_last_checked",              default: '2016-02-05 01:19:16'
+    t.datetime "revocation_posting_date_last_checked",      default: '2016-02-05 01:19:16'
+    t.datetime "exemption_reinstatement_date_last_checked", default: '2016-02-05 01:19:16'
   end
 
   add_index "revokedorganizations", ["organization_id"], name: "index_revokedorganizations_on_organization_id", using: :btree
