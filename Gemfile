@@ -38,6 +38,7 @@ gem 'bootstrap-sass', '~>3.3.6' #Twitter's Bootstrap
 gem 'sass-rails', '~> 5.0'
 gem 'autoprefixer-rails'
 gem 'rocket_pants', '~> 1.0'
+gem 'fog' # For Cloud Storage with Amazon S3
 
 group :development, :test do
   gem "awesome_print"

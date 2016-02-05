@@ -56,3 +56,6 @@ bower.json
 # Adding large full text files (.txt) into gitignore
 /test/files/exempt_organizations_full.txt
 /test/files/postcard_full.txt
+
+# Ignore application configuration
+/config/application.yml
