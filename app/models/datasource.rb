@@ -4,7 +4,27 @@ class Datasource < ActiveRecord::Base
 
   # Gets the latest versions of the files we parse for important data.
   def self.get_latest
-    
+    # Establish Connection to Amazon S3
+    connection = Fog::Storage.new({
+      :provider                 => 'AWS',
+      :aws_access_key_id        => ENV['AWS_ACCESS_KEY_ID'],
+      :aws_secret_access_key    => ENV['AWS_SECRET_ACCESS_KEY']
+    })
+
+    # Choose the AWS bucket based on env. Test is also dev.
+    Rails.env == 'production' ? bucket = "charityapi" : bucket = "charityapi-dev"
+
+    # Get filename
+    @filename = ""
+
+    #
+    file = bucket.files.create(
+      :key    => 'resume.html',
+      :body   => File.open("/path/to/my/resume.html"),
+      :public => false
+    )
+
+
   end
 
   # The Array of arrays of names and datasource URLs
