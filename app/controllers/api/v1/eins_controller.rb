@@ -3,5 +3,4 @@ class Api::V1::EinsController < Api::V1::BaseController
   def show
     expose Organization.find_by_ein(params[:ein].to_s)
   end
-
 end
