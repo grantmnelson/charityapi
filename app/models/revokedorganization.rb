@@ -10,4 +10,4 @@ class Revokedorganization < ActiveRecord::Base
      end
    end
   end
-end
+end 

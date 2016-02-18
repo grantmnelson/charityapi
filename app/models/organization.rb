@@ -5,7 +5,7 @@ class Organization < ActiveRecord::Base
   # Before validation
 
 
-  # Validation
+  # Validation 
   validates :ein, presence: true, ein: true
   validates :state, presence: true, if: Proc.new {|a| a.country == "US"}
   validates :status, presence: true
@@ -58,6 +58,7 @@ class Organization < ActiveRecord::Base
 
 
              }
+    # Doesn't seem like this is being used. Is that intentional?
    n = SmarterCSV.process(filepath, options) do |array|
      array.each do |row_hash|
        next if row_hash[:ein].nil? # Skip if the row or hash is empty.

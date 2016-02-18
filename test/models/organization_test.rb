@@ -10,11 +10,12 @@ class OrganizationTest < ActiveSupport::TestCase
       assert o.valid?
     end
   end
-  
+   
   def setup
     @org = organizations(:oakleaf) 
   end
-
+  
+  # If I add numbers to this the test still passes. Why is that?
   test "All Organizations have an EIN" do
     @org.ein = ""
     assert_not @org.valid?
