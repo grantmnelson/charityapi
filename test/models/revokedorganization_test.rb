@@ -8,6 +8,8 @@ class RevokedorganizationTest < ActiveSupport::TestCase
     end
   end
   
+  # Feels like these tests are wrong
+  
   def setup
     @org = revokedorganizations(:oakleaves)
   end
