@@ -1,6 +1,8 @@
 class Revokedorganization < ActiveRecord::Base
   belongs_to :state
   belongs_to :organization
+  
+  validates :ein, presence: true
 
   # This method checks if the field has a corresponding field_last_checked
   def log_changed
@@ -10,4 +12,4 @@ class Revokedorganization < ActiveRecord::Base
      end
    end
   end
-end
+end 
